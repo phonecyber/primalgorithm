@@ -4,13 +4,7 @@ using namespace std;
 #ifndef Graph_H
 #define Graph_H
 
-// GLOBAL VARIABLES
-int menu = 1;
-int type = 1;
-int example = 1;
-int numNode = 0;
-
-void start()
+void start(int &menu, int &type, int &example, int &numNode)
 {
 	cout << "#### GRAPH TYPE" << endl;
 	cout << "1. Directed graph" << endl;
@@ -144,7 +138,7 @@ public:
 			cout << endl;
 		}
 	}
-	void create_matrix_withValue(int item)
+	void create_matrix_withValue(int item, int &type)
 	{
 		for (int i = 0; i < numNode; i++)
 		{
